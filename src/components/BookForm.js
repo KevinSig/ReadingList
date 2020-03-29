@@ -3,9 +3,9 @@ import { BookContext } from "../context/BookContext";
 
 const NewBookForm = () => {
   const { dispatch } = useContext(BookContext);
-
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
+  console.log(title)
 
   const handleSubmit = e => {
     e.preventDefault();
