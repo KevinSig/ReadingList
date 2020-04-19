@@ -27,6 +27,7 @@ const NewBookForm = () => {
         placeholder="Book Title"
         value={title}
         onChange={e => setTitle(e.target.value)}
+        onInvalid="alert('You must fill out the form!');"
         required
       />
       <input
@@ -35,6 +36,7 @@ const NewBookForm = () => {
         value={author}
         onChange={e => setAuthor(e.target.value)}
         required
+        onInvalid="alert('You must fill out the form!');"
       />
       <input type="submit" value="add book" />
     </form>
